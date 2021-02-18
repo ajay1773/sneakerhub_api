@@ -34,7 +34,7 @@ export const SigninUser = (credentials, history) => {
        return (dispatch) => {
               Axios({
                      method: "POST",
-                     url: "/user/signin",
+                     url: "https://sneakerhubapi.herokuapp.com/user/signin",
                      data: credentials
               })
                      .then(response => {
@@ -56,7 +56,7 @@ export const LoginUser = (credentials, history) => {
        return (dispatch) => {
               Axios({
                      method: "POST",
-                     url: "/user/login",
+                     url: "https://sneakerhubapi.herokuapp.com/user/login",
                      data: credentials
               })
                      .then(response => {

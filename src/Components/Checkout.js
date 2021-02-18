@@ -17,7 +17,7 @@ function Checkout() {
               console.log(value);
               setAddress([...address, value]);
               Axios({
-                     url: `/user/addaddress?uid=${localStorage.getItem("user_id")}`,
+                     url: `https://sneakerhubapi.herokuapp.com/user/addaddress?uid=${localStorage.getItem("user_id")}`,
                      method: "POST",
                      data: value
               })

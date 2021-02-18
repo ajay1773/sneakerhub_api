@@ -21,7 +21,7 @@ function AdminLogin({ history }) {
               Axios({
                      method: "POST",
                      data: value,
-                     url: "/user/admin"
+                     url: "https://sneakerhubapi.herokuapp.com/user/admin"
               }).then(res => {
                      console.log(res.data);
                      if (res.data.success) {
