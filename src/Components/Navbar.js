@@ -34,11 +34,14 @@ function Navbar() {
                                                  </div>
                                           </li>
                                           {
-                                                 localStorage.getItem("admin_token") &&
+                                                 localStorage.getItem("admin_token") ?
 
                                                  <li className="nav-item ">
                                                         <Link to="/addproduct"> <button className="nav-link btn btn-link">Add Product.</button></Link>
-                                                 </li>
+                                                 </li>:
+                                                        <li className="nav-item ">
+                                                               <Link to="/adminlogin"> <button className="nav-link btn btn-link">Admin Login</button></Link>
+                                                        </li>
                                           }
                                    </ul>
                                    {localStorage.getItem("sneaker_token") &&
