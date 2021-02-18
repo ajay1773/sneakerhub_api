@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import Navbar from './Navbar'
+import Navbar from './Navbar';
+import {Link} from 'react-router-dom';
 import { FetchProfile } from "../redux/Users/UserActions"
 function UserProfile() {
        const UserProfileDetails = useSelector(state => state.userDetails.UserProfile);
@@ -23,7 +24,7 @@ function UserProfile() {
 
                                    <div className="card row p-5">
 
-                                          {UserDetails.cart.length === 0 ? <h2>Your cart is empty right now. Go and buy some new sneakers for yourself <a href="/brand?bname=all">here</a></h2> :
+                                          {UserDetails.cart.length === 0 ? <h2>Your cart is empty right now. Go and buy some new sneakers for yourself <Link to="/brand?bname=all">right here </Link> </h2> :
                                                  <div className="w-100">
                                                         <div className="col-12"><p>Your current cart</p></div>
                                                         {UserDetails.cart.map(product => (
