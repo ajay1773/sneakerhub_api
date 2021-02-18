@@ -29,7 +29,7 @@ export const Addproduct = (message) => {
 export const fetchData = () => {
        return (dispatch) => {
               dispatch(fetchProduts)
-              Axios.get("/products")
+              Axios.get("https://sneakerhubapi.herokuapp.com/products")
                      .then(response => {
                             console.log(response.data);
                             const products = response.data;

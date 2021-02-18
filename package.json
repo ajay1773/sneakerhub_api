@@ -1,7 +1,6 @@
 
 {
   "name": "escart",
-  "proxy": "http://localhost:5000/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,13 +27,14 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "client":"react-scripts start",
     "start": "HOST=ec2-65-0-98-57.ap-south-1.compute.amazonaws.com react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "depInstall": "npm install && cd ./backend/ && npm install",
     "start-backend": "nodemon backend/backend.js",
-    "dev": "concurrently -n 'server,client' -c 'red,green'  \"npm run start-backend\" \"npm run start\""
+    "dev": "concurrently -n 'server,client' -c 'red,green'  \"npm run start-backend\" \"npm run client\""
   },
   "eslintConfig": {
     "extends": "react-app"

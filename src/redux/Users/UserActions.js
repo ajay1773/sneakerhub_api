@@ -88,7 +88,7 @@ export const FetchProfile = () => {
               //console.log("working again")
               const Token = localStorage.getItem("sneaker_token");
               //console.log(Token);
-              Axios.get(`/user/profile?id=${localStorage.getItem("user_id")}`, { headers: { "Authorization": `Bearer ${Token}` } })
+              Axios.get(`https://sneakerhubapi.herokuapp.com/user/profile?id=${localStorage.getItem("user_id")}`, { headers: { "Authorization": `Bearer ${Token}` } })
                      .then(res => {
 
                             console.log(res)

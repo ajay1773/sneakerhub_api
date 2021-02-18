@@ -8,7 +8,7 @@ function Search() {
        const [SearchResultArray, setSearchResultArray] = useState([]);
        const handleFetching = e => {
               setSearchQuery(e.target.value);
-              SearchQuery !== "" ? Axios.get(`/search?name=${SearchQuery}`).then(res => { setSearchResultArray(res.data) }).catch(err => { console.log(err) }) : setSearchResultArray([])
+              SearchQuery !== "" ? Axios.get(`https://sneakerhubapi.herokuapp.com/search?name=${SearchQuery}`).then(res => { setSearchResultArray(res.data) }).catch(err => { console.log(err) }) : setSearchResultArray([])
 
        }
        const handleGoingtoProductProfile = (id) => {

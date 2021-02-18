@@ -8,7 +8,7 @@ function Brand({ history }) {
        const splittedBrandname = history.location.search.split("=")[1]
        console.log(splittedBrandname);
        useEffect(() => {
-              Axios.get(`/product?bname=${splittedBrandname}`)
+              Axios.get(`https://sneakerhubapi.herokuapp.com/product?bname=${splittedBrandname}`)
                      .then(res => {
                             console.log(res.data);
                             setItems(res.data);

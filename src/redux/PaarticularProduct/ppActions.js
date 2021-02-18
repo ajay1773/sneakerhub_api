@@ -48,7 +48,7 @@ export const removeProduct = (id) => {
 export const addToTheCart = (id, setCartFlag) => {
        return (dispatch) => {
               const UID = localStorage.getItem("user_id");
-              Axios.get(`/product?id=${id}&userID=${UID}`)
+              Axios.get(`https://sneakerhubapi.herokuapp.com/product?id=${id}&userID=${UID}`)
                      .then(res => {
                             console.log(res.data);
                             setCartFlag(true);
@@ -69,7 +69,7 @@ export const addToTheCart = (id, setCartFlag) => {
 export const removeTheProduct = (id) => {
        return (dispatch) => {
               const UID = localStorage.getItem("user_id");
-              Axios.get(`/removefromcart?id=${id}&userID=${UID}`)
+              Axios.get(`https://sneakerhubapi.herokuapp.com/removefromcart?id=${id}&userID=${UID}`)
                      .then(res => {
                             console.log(res.data);
 
@@ -85,7 +85,7 @@ export const fetchTheProduct = (id, size) => {
               dispatch(fetchStart)
               const UID = localStorage.getItem("user_id");
               console.log(UID)
-              Axios.get(`/getcart?userId=${UID}`)
+              Axios.get(`https://sneakerhubapi.herokuapp.com/getcart?userId=${UID}`)
                      .then(response => {
                             console.log(response.data)
                             dispatch(fetchSucced(response.data));
@@ -107,7 +107,7 @@ export const saveTheProduct = (product) => {
 
 export const fetchAndSaveTheProduct = (id) => {
        return (dispatch) => {
-              Axios.get(`/product?id=${id}`)
+              Axios.get(`https://sneakerhubapi.herokuapp.com/product?id=${id}`)
                      .then(res => {
                             // console.log(res.data.imageURL);
                             dispatch(saveProduct(res.data))

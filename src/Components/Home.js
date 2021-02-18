@@ -56,7 +56,7 @@ function Navbar() {
                             //Converse splitting arrays
                             const ConverseProductarrays = ConverseSplitter(response.data);
                             setConverseSplittedArrays({ activeArray: ConverseProductarrays.anotherSplittedArray, lastTwoElements: ConverseProductarrays.splittedItems });
-                            console.log(AdidasProductarrays);
+                            console.log(response.data);
 
 
 
