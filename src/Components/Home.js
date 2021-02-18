@@ -141,7 +141,7 @@ function Navbar() {
 
                      </div>
                      <div className="container-fluid d-flex align-items-center justify-content-around  " style={{ height: "40vh", marginTop: "16vw" }}>
-                            <img src="https://cdn.psdrepo.com/images/2x/adidas-yeezy-vector-free-psd-t3.jpg" alt="" />
+                            <img src="https://cdn.psdrepo.com/images/2x/adidas-yeezy-vector-free-psd-t3.jpg" alt="" className="img-fluid" />
                      </div>
                      <div className="carousel slide p-5" id="carouselControlsAdidas" data-ride="carousel" style={{ marginTop: "16vw" }}>
                             <div className="carousel-inner">
