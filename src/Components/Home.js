@@ -43,7 +43,7 @@ function Navbar() {
 
        }
        useEffect(() => {
-              Axios.get("/products")
+              Axios.get("https://sneakerhubapi.herokuapp.com/products")
                      .then(response => {
 
                             dispatch(setProducts(response.data));
