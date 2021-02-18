@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Footer() {
        return (
@@ -25,14 +26,14 @@ function Footer() {
                                           <h3 className="mb-5">To get the latest news signup for our news letter</h3>
                                           <form className="form-group form-inline">
                                                  <input className="form-control w-75" placeholder="Email..."></input>
-                                                 <button className="btn btn-outline-light">Subscribe</button>
+                                                 <button className="btn btn-light">Subscribe</button>
                                           </form>
                                    </div>
                             </div>
                             <div className="row">
                                    <div className="col-lg-3">
                                           <ul className="list-unstyled my-3">
-                                                 <h3>Sell</h3>
+                                                 <h3>Authorities</h3>
                                                  <li className="list-item">Fee policy</li>
                                                  <li className="list-item">Dropoff</li>
                                           </ul>

@@ -27,7 +27,7 @@ function Cart({ history }) {
               <div className="container-fluid" style={{ minHeight: "100vh" }}>
                      <Navbar />
                      <div className="container" style={{ marginTop: "18vh" }}>
-                            {username.length === 0 ? <h2>Your cart is empty right now. Go and buy some new sneakers for yourself <a href="/brand?bname=all">here</a></h2> :
+                            {username.length === 0 ? <h2>Your cart is empty right now. Go and buy some new sneakers for yourself <Link to="/brand?bname=all"><button className="btn btn-success">Place Order</button></Link></h2> :
                                    <div>
                                           <div className="row mb-5">
                                                  <div className="col text-center" ><h2>Your Cart</h2></div>

@@ -1,6 +1,6 @@
 import React from 'react';
-//import './CSS/Home.css';
-import mag from "./Images/airmag.jpg"
+import {Link} from 'react-router-dom';
+import mag from "./Images/airmag.jpg";
 import { useForm } from "react-hook-form";
 import Navbar from './Navbar';
 import { useDispatch, useSelector } from 'react-redux';
@@ -41,6 +41,7 @@ function UserSignIn({ history }) {
                                           </div>
                                           <button type="submit" className="btn btn-block mt-4">Register</button>
                                    </form>
+                                   <p className="mt-2" style={{ fontSize: "20px" }}>Already registered? <Link to="/user/login">Log In</Link> here</p>
                             </div>
 
                             {state.msg &&

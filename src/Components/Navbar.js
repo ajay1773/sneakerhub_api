@@ -28,11 +28,18 @@ function Navbar() {
                                           <li className="nav-item dropdown ">
                                                  <button className="nav-link dropdown-toggle btn btn-link" id="navbarDropdown" role="button" data-toggle="dropdown">Brands</button>
                                                  <div className="dropdown-menu">
-                                                        <a href="/brand?bname=Adidas" className="dropdown-item">Adidas</a>
-                                                        <a href="/brand?bname=Nike" className="dropdown-item">Nike</a>
-                                                        <a href="/brand?bname=Converse" className="dropdown-item">Converse</a>
+                                                        <Link to="/brand?bname=Adidas"><button className="dropdown-item">Adidas</button></Link>
+                                                        <Link to="/brand?bname=Nike"> <button className="dropdown-item">Nike</button></Link>
+                                                        <Link to="/brand?bname=Converse"> <button className="dropdown-item">Converse</button></Link>
                                                  </div>
                                           </li>
+                                          {
+                                                 localStorage.getItem("admin_token") &&
+
+                                                 <li className="nav-item ">
+                                                        <Link to="/addproduct"> <button className="nav-link btn btn-link">Add Product.</button></Link>
+                                                 </li>
+                                          }
                                    </ul>
                                    {localStorage.getItem("sneaker_token") &&
 

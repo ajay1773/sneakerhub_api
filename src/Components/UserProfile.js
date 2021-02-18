@@ -23,7 +23,7 @@ function UserProfile() {
 
                                    <div className="card row p-5">
 
-                                          {UserDetails.cart.length === 0 ? <h2>Your cart is empty right now. Go and buy some new sneakers for yourself <a href="/">here</a></h2> :
+                                          {UserDetails.cart.length === 0 ? <h2>Your cart is empty right now. Go and buy some new sneakers for yourself <a href="/brand?bname=all">here</a></h2> :
                                                  <div className="w-100">
                                                         <div className="col-12"><p>Your current cart</p></div>
                                                         {UserDetails.cart.map(product => (
