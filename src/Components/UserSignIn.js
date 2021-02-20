@@ -1,4 +1,5 @@
 import React from 'react';
+import './CSS/Home.css';
 import {Link} from 'react-router-dom';
 import mag from "./Images/airmag.jpg";
 import { useForm } from "react-hook-form";
@@ -18,7 +19,7 @@ function UserSignIn({ history }) {
        return (
               <div style={{ height: "100vh" }} className="container-fluid d-flex align-items-center justify-content-center">
                      <Navbar />
-                     <div className="row form-container"  >
+                     <div className="row form-container mt-5 mb-5"   >
                             <div className="col-lg-6 col-md-6 col-sm-12 ">
                                    <img src={mag} alt="..." className="img-fluid" />
                             </div>
