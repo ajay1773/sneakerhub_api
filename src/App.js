@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import "./Components/Fonts";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Home";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Product from "./Components/Product";
